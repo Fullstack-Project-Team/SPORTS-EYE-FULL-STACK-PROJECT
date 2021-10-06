@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    background-color:lightgrey;
+    margin: 10px 10px;
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav-bar ul li{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    font-size: 1.75em;
+}
+
+.nav-bar ul li a{
+    text-decoration:none;
+
+}
+.nav-bar ul li i{
+    text-decoration: none;
+    color: yellow;
+
+}
+
+.banner{
+    background-image: url(../images/cricket_banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+    
+}
+
+.banner p{
+    font-size: 100px;
+    color: wheat;
+    
+}
+.banner p.secondary{
+    font-size: 20px;
+}
