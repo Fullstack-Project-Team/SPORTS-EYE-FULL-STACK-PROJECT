@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: arial;
+      }
+      .header {
+        background-color: lightgray;
+        height: 70px;
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .menu {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* line-height: 70px; */
+      }
+      .menu li a {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 0px 20px;
+        color: black;
+        position: relative;
+      }
+      .menu li a:hover {
+        color: lightcoral;
+      }
+
+      .menu li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        background-color: lightcoral;
+        transition: 0.3s;
+      }
+      .menu li a:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul class="menu">
+          <li><a href="#">Football</a></li>
+          <li><a href="#">Scores&Fixtures</a></li>
+          <li><a href="#">Tables</a></li>
+          <li><a href="#">Top Scores</a></li>
+          <li><a href="#">Teams</a></li>
+        </ul>
+      </div>
+      <div class="content"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
