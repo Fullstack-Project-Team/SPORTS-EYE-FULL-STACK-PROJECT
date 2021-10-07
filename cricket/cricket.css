@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    background-color:lightgrey;
+    margin: 10px 10px;
+    /* font-variant: small-caps; */
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav-bar ul li{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    font-size: 1.75em;
+}
+
+.nav-bar ul li a{
+    text-decoration:none;
+    color: black;
+    position: relative;
+
+}
+.nav-bar ul li a:hover{
+    color: lightcoral;
+
+}
+.nav-bar ul li a::after{
+    content:  '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left:0;
+    background-color: lightcoral    ;
+    transition: .3s
+}
+.nav-bar ul li a:hover::after{
+    width: 100%;
+}
+.nav-bar ul li i{
+    text-decoration: none;
+    color: yellow;
+
+}
+
+.banner{
+    background-image: url(../images/cricket_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-family: 'Noto Serif', serif;
+    
+}
+
+.banner p{
+    font-size: 100px;
+    color: white;
+    margin: 10px 10px;
+    
+}
+.banner p.secondary{
+    font-size: 2.5rem;
+    color: black;
+
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-family: 'Noto Serif', serif;
+}
+.feature{
+    display: grid;
+   
+}
+
+.feature div.div-1{
+    background-image: url(../images/Domestic_cricket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-areas: "div-1";
+    /* height:100vh; */
+}
+.feature div.div-2{
+    background-image: url(../images/international_cricket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-areas: "div-2";
+
+    /* height:100vh; */
+}
+.feature div.div-3{
+    background-image: url(../images/Trending_cricket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-areas: "div-3";
+
+    /* height:100vh; */
+}
+.feature div.div-4{
+    background-image: url(../images/news_cricket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-areas: "div-4";
+
+    /* height:100vh; */
+}
+.feature div.div-5{
+    background-image: url(../images/score_cricket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-areas: "div-5";
+
+    /* height:100vh; */
+}
