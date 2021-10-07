@@ -12,7 +12,7 @@
 .nav-bar ul{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: left;
     flex-direction: row;
 }
 
@@ -81,20 +81,31 @@
 }
 
 .middle{
+    background-color: rgb(8, 5, 39);
+    color: white;
     display: flex;
     align-items: center;
     height: 20vh;
     justify-content: center;
     font-size: 2rem;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     margin: 10px 10px;
     padding: 10px 10px;
     font-family: 'Noto Serif', serif;
 }
 .feature{
-    display: grid;
-   
+    /* display: grid;
+    grid-template: 'div-1 div-1 div-2'
+    'div-2 div-2'
+    'div-3 div-3'
+    'div-4 div-5';
+    */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .feature div.div-1{
@@ -102,37 +113,69 @@
     background-repeat: no-repeat;
     background-size: cover;
     grid-template-areas: "div-1";
-    /* height:100vh; */
+    width: 45vw;
+    height:30vh;
+    margin:10px 10px;
+    border-radius: 10px;
 }
 .feature div.div-2{
     background-image: url(../images/international_cricket.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-template-areas: "div-2";
+    width: 45vw;
 
-    /* height:100vh; */
+    height:30vh;
+    margin:10px 10px;
+    border-radius: 10px;
 }
 .feature div.div-3{
     background-image: url(../images/Trending_cricket.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-template-areas: "div-3";
+    width: 45vw;
 
-    /* height:100vh; */
+    height:30vh;
+    margin:10px 10px;
+    border-radius: 10px;
 }
 .feature div.div-4{
     background-image: url(../images/news_cricket.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-template-areas: "div-4";
+    width: 45vw;
 
-    /* height:100vh; */
+    height:30vh;
+    margin:10px 10px;
+    border-radius: 10px;
 }
 .feature div.div-5{
     background-image: url(../images/score_cricket.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-template-areas: "div-5";
+    width: 45vw;
 
-    /* height:100vh; */
+    height:30vh;
+    margin:10px 10px;
+    border-radius: 10px;
+}
+
+.feature h1{
+    color: white;
+    margin: 5px 5px;
+    font-size: 2.5rem;
+    
+}
+
+.feature p{
+    color: whitesmoke;
+    margin: 5px 5px;
+    font-size: 1.5rem;
+}
+
+.feature a{
+    text-decoration: none;
 }
