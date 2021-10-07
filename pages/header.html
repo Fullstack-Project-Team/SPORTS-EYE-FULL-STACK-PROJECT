@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
         .container{
@@ -20,16 +21,21 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        .header .menu{
+        p{
+            font-size: 40px; 
+            display: inline-block; 
+            font-weight:900; 
+            color:lightcoral
+        }
+        .header #menu{
             list-style: none;
         }
-        .menu{
+        #menu{
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .menu li a{
+        #menu li a{
             text-decoration: none;
             font-size: 20px;
             padding: 0px 20px;
@@ -37,11 +43,11 @@
             position: relative;
 
         }
-        .menu li a:hover{
+        #menu li a:hover{
             color: lightcoral;
         }
         
-        .menu li a::after{
+        #menu li a::after{
             content:  '';
             display: block;
             width: 0;
@@ -49,25 +55,99 @@
             position: absolute;
             left:0;
             background-color: lightcoral    ;
-            transition: .3s
+            transition: .3s;
         }
-        .menu li a:hover::after{
+        #menu li a:hover::after{
             width: 100%;
+        }
+        span{
+            font-size: 40px; 
+            font-weight: 900; 
+            color:black;
+        }
+        .header a i{
+            display: none;
+            font-size: 30px;
+        }
+        @media only screen and (max-width: 1000px){
+            p{
+                font-size: 25px;
+
+            }
+            span{
+                font-size: 25px;
+            }
+            #menu li a{
+                font-size: 15px;
+                padding: 0px 10px;
+            }
+            
+        }
+        @media only screen and (max-width: 700px){
+            #menu{
+                background-color: grey;
+                top:0;
+                position: fixed;
+                right: -100%;
+                width: 100%;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                transition: .7s;
+
+            }
+            #menu li a{
+                font-size: 25px;
+                font-weight: bold;
+                color: white;
+            }
+            #menu li{
+                display: block;
+                padding: 20px 0px;
+            }
+            .header a i{
+                display: block;;
+            }
+            .hide-btn{
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class = "container">
         <div class = "header">
-            <p style = "font-size: 40px; display: inline-block; font-weight:900; color:lightcoral";>SP<i class = "fa fa-futbol-o" style="color:lightcoral;"></i>TS <span style = "font-size: 40px; font-weight: 900; color:black">EYE</span></p>
-        
-            <ul class = "menu">
+            <p>SP<i class = "fa fa-futbol-o" style="color:lightcoral;"></i>RTS <span>EYE</span></p>
+            
+            <a href = "javascript:void(0);" onclick="myFunction()"><i class = "fa fa-bars" ></i></a>
+            
+            <ul id = "menu">
                 <li><a href="#">HOME</a></li>
-                <li><a href="../cricket/cricket.html">CRICKET</a></li>
-                <li><a href="#">FOOTBALL</a></li>
+                <li><a href = "../cricket/cricket.html">CRICKET</a></li>
+                <li><a href="../football/football.html">FOOTBALL</a></li>
                 <li><a href="#">HOCKEY</a></li>
                 <li><a href="#">TABLE TENNIS</a></li>
+                <a href = "javascript:void(0);" class = "hide-btn" onclick="myFunction()"><i class = "fa fa-close"></i></a>
             </ul>
-    </div>
+            <script>
+                function myFunction(){
+                   var x = document.getElementById("menu");
+                   var y = document.getElementById("slideshow-container");
+                   if(x.style.right === "-100%"){
+                       x.style.right = "0";
+                       y.style.display = "none";    
+                   }
+                   else{
+                       x.style.right = "-100%";
+                       y.style.display = "block";
+                   }
+                   
+                  
+                   
+                
+                }
+            </script>
+            
 </body>
 </html>

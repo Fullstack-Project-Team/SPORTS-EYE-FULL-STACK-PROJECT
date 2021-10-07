@@ -52,6 +52,32 @@
       .menu li a:hover::after {
         width: 100%;
       }
+      .content{
+        display: flex;
+        flex-direction: row;
+      }
+      .content img{
+        width: 50%;
+        height: 150px;
+      }
+      .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+      }
+      .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        height: 350px;
+        background-color: aqua;
+      }
+      .right p{
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
@@ -59,13 +85,23 @@
       <div class="header">
         <ul class="menu">
           <li><a href="#">Football</a></li>
-          <li><a href="#">Scores&Fixtures</a></li>
+          <li><a href="#">Scores</a></li>
+          <li><a href="#">Fixtures</a></li>
           <li><a href="#">Tables</a></li>
           <li><a href="#">Top Scores</a></li>
           <li><a href="#">Teams</a></li>
         </ul>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="left">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam aut vitae culpa maxime, velit voluptatem voluptas inventore voluptate officia molestias delectus fugiat labore ipsam quidem veniam deleniti suscipit quos impedit, quibusdam eveniet. Natus accusantium at provident dolor alias dolores, quia ad neque? Doloribus aperiam consequuntur perferendis placeat ad tempore amet expedita et consectetur hic culpa molestiae at distinctio harum reiciendis corrupti optio vitae totam quasi, tempora, voluptate ipsum ducimus blanditiis. Sint minus voluptatibus libero tempore. Dicta repellendus minus distinctio magnam laudantium consequuntur quo, dolores iure facilis, totam quibusdam sapiente quae dignissimos? Aliquam quia, debitis culpa doloremque veniam necessitatibus soluta.</p>
+        </div>
+        <div class="right">
+          <img src="./fimage/football2.jpg" alt="">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugit, velit laboriosam ea quisquam sit ipsum! Magni molestias, modi molestiae similique quam nesciunt iusto quasi ipsam quis aliquam maxime quisquam aut velit culpa placeat. Dolorum, minus placeat. Ratione deleniti ab aliquam est possimus qui quia enim aliquid ex. Aspernatur iste libero, atque soluta vitae voluptatibus deserunt, debitis officia necessitatibus, ad hic? Porro nisi, maxime quam, esse deserunt explicabo sit sapiente perferendis praesentium </p>
+        </div>
+        
+      </div>
       <div class="footer"></div>
     </div>
   </body>
