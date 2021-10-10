@@ -61,22 +61,52 @@
         height: 150px;
       }
       .left{
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        flex-direction: column;
+        width: 40%;
+        /* background-color: aqua; */
+        margin-right: 50px;
+        height: 100%;
+      }
+      .left p{
+        padding: 20px;
       }
       .right{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 50%;
-        height: 350px;
-        background-color: aqua;
+        width: 40%;
+        margin-left: 50px;
+        /* background-color: aqua; */
       }
       .right p{
         padding: 20px;
+      }
+      .wcontent{
+        display: flex;
+        flex-direction: column;
+      }
+      .box{
+        height: 150px;
+        width: 250px;
+        border: 2px solid yellow;
+        border-radius: 10px;
+        background-color: gray;
+      }
+      .content1{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .post{
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
       }
     </style>
   </head>
@@ -92,15 +122,41 @@
           <li><a href="#">Teams</a></li>
         </ul>
       </div>
+      <div class="wcontent">
       <div class="content">
         <div class="left">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam aut vitae culpa maxime, velit voluptatem voluptas inventore voluptate officia molestias delectus fugiat labore ipsam quidem veniam deleniti suscipit quos impedit, quibusdam eveniet. Natus accusantium at provident dolor alias dolores, quia ad neque? Doloribus aperiam consequuntur perferendis placeat ad tempore amet expedita et consectetur hic culpa molestiae at distinctio harum reiciendis corrupti optio vitae totam quasi, tempora, voluptate ipsum ducimus blanditiis. Sint minus voluptatibus libero tempore. Dicta repellendus minus distinctio magnam laudantium consequuntur quo, dolores iure facilis, totam quibusdam sapiente quae dignissimos? Aliquam quia, debitis culpa doloremque veniam necessitatibus soluta.</p>
+          <img src="./fimage/football2.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam aut vitae culpa maxime, velit voluptatem voluptas inventore voluptate officia molestias delectus fugiat labore ipsam quidem veniam deleniti suscipit quos impedit, quibusdam eveniet. Natus accusantium at provident dolor alias dolores, quia ad neque? Doloribus aperiam consequuntur perferendis placeat ad tempore amet expedita et consectetur hic culpa molestiae at distinctio harum reiciendis corrupti optio vitae totam quasi, tempora, voluptate ipsum ducimus blanditiis.</p>
         </div>
         <div class="right">
-          <img src="./fimage/football2.jpg" alt="">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugit, velit laboriosam ea quisquam sit ipsum! Magni molestias, modi molestiae similique quam nesciunt iusto quasi ipsam quis aliquam maxime quisquam aut velit culpa placeat. Dolorum, minus placeat. Ratione deleniti ab aliquam est possimus qui quia enim aliquid ex. Aspernatur iste libero, atque soluta vitae voluptatibus deserunt, debitis officia necessitatibus, ad hic? Porro nisi, maxime quam, esse deserunt explicabo sit sapiente perferendis praesentium </p>
+          <div class="headlines">
+          <h3 style="margin-top: 10px;margin-bottom: 20px;">Top Headlines</h3>
+          <ul>
+            <li>Mueller goal earns Germany win over Romania</li>
+            <li>Netherlands win, boost WC qualifying hopes</li>
+            <li>Croatia stay on course with 3-0 win at Cyprus</li>
+            <li>Skriniar own goal lifts Russia over Slovakia</li>
+            <li>Lobera steps down as Mumbai City coach</li>
+            <li>Laporta: I had hope Messi would stay for free</li>
+            <li>Messi, Ronaldo among 30 Ballon d'Or nominees</li>
+            <li>Southgate rejects claim players not keen on jab</li>
+            <li>Lionel Messi And Cristiano Ronaldo In Ballon D'Or Contention Again</li>
+            <li>Jamal Khashoggi's Fiancee Hits Out At Saudi-Led Takeover Of Newcastle United</li>
+            <li>US Judge Recommends Dismissing Cristiano Ronaldo Rape Case</li>
+          </ul>
         </div>
-        
+        <div class="post">
+          <img style="width: 80%;height: 80%;" src="./fimage/latestScores.jpg" alt="">
+        </div>
+        </div>
+      </div>
+      <div class="content1">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <script src="script.js"></script>
       </div>
       <div class="footer"></div>
     </div>
