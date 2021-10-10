@@ -93,7 +93,7 @@
                 height: 600px;
                 display: flex;
                 flex-direction: column;
-                transition: .7s;
+                transition: 1s;
 
             }
             #menu li a{
@@ -109,9 +109,13 @@
                 display: block;;
             }
             .hide-btn{
+                display: block;
                 position: absolute;
                 right: 20px;
                 top: 10px;
+            }
+            .fa {
+                color: black;
             }
         }
     </style>
@@ -123,10 +127,10 @@
             <a href = "javascript:void(0);" onclick="myFunction()"><i class = "fa fa-bars" ></i></a>
             
             <ul id = "menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href = "../cricket/cricket.html">CRICKET</a></li>
-                <li><a href="../football/football.html">FOOTBALL</a></li>
-                <li><a href="#">HOCKEY</a></li>
+                <li><a href=".">HOME</a></li>
+                <li><a href = "./cricket/cricket.html">CRICKET</a></li>
+                <li><a href="./football/football.html">FOOTBALL</a></li>
+                <li><a href="./hockey/hockey.html">HOCKEY</a></li>
                 <li><a href="#">TABLE TENNIS</a></li>
                 <a href = "javascript:void(0);" class = "hide-btn" onclick="myFunction()"><i class = "fa fa-close"></i></a>
             </ul>
