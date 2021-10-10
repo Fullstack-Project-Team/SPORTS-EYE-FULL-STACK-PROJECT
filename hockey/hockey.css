@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.menu {
+  background-color: rgb(192, 192, 24);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+.menu ul {
+  list-style: none;
+  display: inline-flex;
+}
+.menu ul li {
+  width: 150px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu ul li a:hover {
+  color: black;
+}
+.menu ul li :hover {
+  background-color: gold;
+}
+.home {
+    background-color: blue;
+    text-align: center;
+}
+.home img {
+    width: 600px;
+}
+#teams {
+    background-color: indianred;
+}
+.teams-A {
+    display: inline-flex;
+    text-align: center;
+}
+.teams-A img {
+    margin: 28px;
+    margin-top: 15px;
+}
+.teams-B {
+    display: inline-flex;
+    text-align: center;
+}
+.teams-B img {
+    margin: 30px;
+    margin-top: 15px;
+}
+#schedule h1{
+    text-align: center;
+}
+#schedule img{
+    width: 100%;
+}
+#olympics h1{
+    text-align: center;
+}
+#olympics {
+    text-align: center;
+}
+#contact h1{
+    text-align: center;
+}
+
+#news h1{
+    text-align: center;
+}
+#news img {
+    width: 100%;
+}
