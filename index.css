@@ -134,12 +134,16 @@
         
         }
         .circle img{
-            border: 3px solid lightgray;
+            border: 3px solid blue;
             width: 200px;
-            height: 200px;
-            border-radius: 50%;
+            height: 250px;
+            border-radius: 40%;
             display: inline-block;
             display: flex;
             flex-direction: row;
             margin: 50px 50px 100px 70px;
-        }
+            -webkit-border-radius: 40%;
+            -moz-border-radius: 40%;
+            -ms-border-radius: 40%;
+            -o-border-radius: 40%;
+}
