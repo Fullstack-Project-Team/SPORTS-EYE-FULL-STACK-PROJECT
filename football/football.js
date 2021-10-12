@@ -7,7 +7,12 @@ fetch("https://api-football-v1.p.rapidapi.com/v3/timezone", {
 })
 .then(response => {
 	console.log(response);
+	displayData(data)
 })
 .catch(err => {
 	console.error(err);
 });
+
+function displayData(data) {
+	const cocktailDiv = document.getElementById("football");
+  }  
