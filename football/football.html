@@ -12,6 +12,10 @@
         box-sizing: border-box;
         font-family: arial;
       }
+      #container1{
+        display: flex;
+        flex-wrap: wrap;
+      }
       .header {
         background-color: lightgray;
         height: 70px;
@@ -125,9 +129,41 @@
         height: 100%;
         width: 100%;
       }
+      .viewTeam{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+      .viewall{
+        padding: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 1000px;
+      }
+      .teamName{
+        margin-left: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 25px;
+        padding: 10px;
+        list-style-type: none;
+      }
+      .teamImage ul{
+        margin-left: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* text-decoration: none; */
+      }
+      .teamImage ul img{
+        width: 40%;
+
+      }
     </style>
   </head>
-  <body>
+  <body id="container1">
     <div class="container">
       <div class="header">
         <ul class="menu">
@@ -136,7 +172,7 @@
           <li><a href="#">Fixtures</a></li>
           <li><a href="#">Tables</a></li>
           <li><a href="#">Top Scores</a></li>
-          <li><a href="#">Teams</a></li>
+          <li><a href="./team.html">Teams</a></li>
         </ul>
       </div>
       <div class="wcontent">
@@ -190,8 +226,17 @@
         <p>2022 World Cup Qualifying-UEFA</p>
       </div>
     </div>
-    <div class="football"></div>
-    <script src="football.js"></script>
+    <div class="viewTeam"><div style="margin-left: 20px;"><span style="font-weight: bold; font-size: 25px;"> Teams</span></div> <a href="./team.html" class="viewall">View All</a> </div>
+    <div class="teamImage">
+      <div class="teamName">
+      <li>Manchester City</li>
+      <li>Real Madrid C.F.</li>
+    </div>
+      <ul>
+      <img src="./fimage/teams/10-Manchester-City-49-3-million-followers.webp" alt="">
+      <img src="./fimage/teams/1-Real-Madrid-C-F-201-9-million-followers.webp" alt="">
+    </ul>
+    </div>
       </div>
       <div class="footer"></div>
     </div>
