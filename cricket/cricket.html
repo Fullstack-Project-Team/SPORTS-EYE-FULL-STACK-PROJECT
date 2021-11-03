@@ -21,17 +21,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
-
+<script> 
+    $(function(){
+      $("#header").load("./../pages/header.html"); 
+    });
+    $(function(){
+      $("#footer").load("./../pages/footer.html")
+    });
+    </script> 
 </head>
 <body>
-   <div class="nav-bar">
-       <ul class="list">
-           <li><a href="#">Domestic Matches</a></li>
-           <li><a href="#">International Matches</a></li>
-           <li><a href="#">Trending </a><i class="fa fa-fire"></i></li>
-           <li><a href="#">News</a></li>
-           <li><a href="#">LIVE Score</a></li>
-       </ul>
+   <div id = "header"></div>
    </div>
 
    <div class="banner">
@@ -80,5 +80,6 @@
         </div>
     </a>
    </div>
+   <div id = "footer"></div>
 </body>
 </html>

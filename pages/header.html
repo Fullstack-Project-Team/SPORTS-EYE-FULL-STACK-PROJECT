@@ -120,11 +120,29 @@
             .cricket ul{
                 display: none;
             }
-
-
-
         }
+        .cricket-dropdown{
+
+            list-style: none;
+            padding-top: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            transition: all ease-in-out 0.4s;
+            margin-top: 20px;
+            
+        }
+        .cricket:hover .cricket-dropdown{
         
+            display: block;
+            
+        }
+        .cricket-dropdown li{
+            padding-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -135,7 +153,15 @@
             
             <ul id = "menu">
                 <li><a href=".">HOME</a></li>
-                <li class="cricket"><a href = "./cricket/cricket.html">CRICKET</a></li>
+                <li class="cricket"><a href = "./cricket/cricket.html">CRICKET</a>
+                    <ul class="cricket-dropdown">
+                        <li><a href="#">Domestic Matches</a></li>
+                        <li><a href="#">International Matches</a></li>
+                        <li><a href="#">Trending </a><i class="fa fa-fire"></i></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">LIVE Score</a></li>
+                    </ul>
+                </li>
                 <li><a href="./football/football.html">FOOTBALL</a></li>
                 <li><a href="./hockey/hockey.html">HOCKEY</a></li>
                 <li><a href="#">TABLE TENNIS</a></li>
