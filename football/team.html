@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
     <title>Teams - Football - SPORTSEYE</title>
+    <script> 
+        $(function(){
+          $("#header").load("../pages/header.html"); 
+        });
+        $(function(){
+          $("#footer").load("../pages/footer.html")
+        });
+        </script>
     <style>
         #container{
             display: flex;
             flex-wrap: wrap;
+        }
+        .allTeam{
+            margin-left: 20px;
         }
         .name1{
             font-weight: bold;
             font-size: 20px;
             margin-bottom: 5px;
             padding: 20px;
+            margin-left: 50px;
         }
         .name{
             font-weight: bold;
@@ -22,6 +35,7 @@
             margin-top: 10px;
             margin-bottom: 5px;
             padding: 20px;
+            margin-left: 50px;
         }
         table{
             width: 80%;
@@ -30,12 +44,16 @@
         td{
             border-bottom: 1px solid gray;
         }
+        img{
+            margin-left: 200px;
+            width: 85%;
+        }
     </style>
 </head>
 <body id="container">
-    
+    <div id="header" style="width: 100%;"></div>
     <ol>
-        <div class=".allTeam">
+        <div class="allTeam">
             <h1>All Teams</h1>
             <h2>International</h2>
             <div class="international">
@@ -110,5 +128,6 @@
     <li class="name">Schalke 04 — 4.1 million followers</li>
     <img src="./fimage/teams/20-Schalke-04-4-1-million-followers.webp" alt="">
     </ol>
+    <div id="footer"></div>
 </body>
 </html>

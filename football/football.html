@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
     <title>Football - SPORTSEYE</title>
+    <script>
+      $(function(){
+        $("#header").load("../pages/header.html");
+      });
+      $(function(){
+        $("#footer").load("../pages/footer.html")
+      });
+      </script>
     <style>
       * {
         padding: 0;
@@ -16,7 +25,7 @@
         display: flex;
         flex-wrap: wrap;
       }
-      .header {
+      .subheader {
         background-color: lightgray;
         height: 70px;
         width: 100%;
@@ -118,7 +127,7 @@
       .boxContent{
         justify-content: center;
       }
-      .content1{
+      #content1{
         margin-top: 20px;
         display: flex;
         flex-direction: row;
@@ -164,21 +173,27 @@
     </style>
   </head>
   <body id="container1">
-    <div class="container">
-      <div class="header">
+    <div id="header" style="width: 100%;"></div>
+    <!-- <div class="container"> -->
+      <div class="subheader">
         <ul class="menu">
           <li><a href="#">Football</a></li>
-          <li><a href="#">Scores&Fixtures</a></li>
-          <li><a href="#">Tables</a></li>
-          <li><a href="#">Top Scores</a></li>
+          <li><a href="#content1">Scores&Fixtures</a></li>
+          <li><a href="./tables.html">Tables</a></li>
+          <!-- <li><a href=".content1">Top Scores</a></li> -->
           <li><a href="./team.html">Teams</a></li>
         </ul>
       </div>
       <div class="wcontent">
       <div class="content">
         <div class="left">
-          <img src="./fimage/football2.jpg" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam aut vitae culpa maxime, velit voluptatem voluptas inventore voluptate officia molestias delectus fugiat labore ipsam quidem veniam deleniti suscipit quos impedit, quibusdam eveniet. Natus accusantium at provident dolor alias dolores, quia ad neque? Doloribus aperiam consequuntur perferendis placeat ad tempore amet expedita et consectetur hic culpa molestiae at distinctio harum reiciendis corrupti optio vitae totam quasi, tempora, voluptate ipsum ducimus blanditiis.</p>
+          <h2>Top Stories</h2>
+          <div class="post" style="margin-bottom: 0px;">
+          <img style="width: 70%;height: 40%;margin-left: 30px;margin-bottom: 0px;" src="./fimage/Premier-League-1636367307-1000x750.jpg" alt="">
+          <p style="margin-top: 0px;">Premier League player of the week - Pep's Conductor</p>
+          <img style="width: 50%;height: 35%;margin-left: 30px;" src="./fimage/smith-rowe_5555934.jpg" alt="">
+            <p style="margin-top: 2px;">Emile Smith Rowe has been called up to the England senior men's squad for the first time.</p>
+          </div>
         </div>
         <div class="right">
           <div class="headlines">
@@ -203,7 +218,7 @@
         </div>
       </div>
       <div style="margin-left: 20px;"><span style="font-weight: bold; font-size: 25px;"> Top Scores And Fixtures </span></div>
-      <div class="content1">
+      <div id="content1">
       <div class="box">
         <div class="boxContent"><p><img src="./fimage/soudi arabia.png" alt=""><span>Saudi Arabia</span></p></div>
         <div class="boxContent"><p><img src="./fimage/china.png" alt=""><span>China</span></p></div>
@@ -237,7 +252,8 @@
     </ul>
     </div>
       </div>
-      <div class="footer"></div>
-    </div>
+      <div class="subfooter"></div>
+    <!-- </div> -->
+    <div id="footer"></div>
   </body>
 </html>
