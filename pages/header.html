@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <title>Document</title>
     <style>
         .container{
@@ -62,7 +63,7 @@
         }
         span{
             font-size: 40px; 
-            font-weight: 900; 
+            font-weight: bolder; 
             color:black;
         }
         .header a i{
@@ -132,7 +133,7 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
             transition: all ease-in-out 0.4s;
-            margin-top: 20px;
+            margin-top: 3px;
             
         }
         .cricket:hover .cricket-dropdown{
@@ -142,6 +143,55 @@
         }
         .cricket-dropdown li{
             padding-bottom: 15px;
+        }
+        .football-dropdown{
+
+            list-style: none;
+            padding-top: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            transition: all ease-in-out 0.4s;
+            margin-top: 3px;
+
+            }
+        .football:hover .football-dropdown{
+                display: block;
+        }
+        .football-dropdown li{
+            padding-bottom: 15px;
+        }
+        .hockey-dropdown{
+
+            list-style: none;
+            padding-top: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            transition: all ease-in-out 0.4s;
+            margin-top: 3px;
+
+            }
+        .hockey:hover .hockey-dropdown{
+                display: block;
+        }
+        .hockey-dropdown li{
+            padding-bottom: 15px;
+        }
+        .fa-futbol-o{
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate{
+            100%{
+                transform: rotate(360deg);
+            }
+
         }
     </style>
 </head>
@@ -153,7 +203,7 @@
             
             <ul id = "menu">
                 <li><a href=".">HOME</a></li>
-                <li class="cricket"><a href = "./cricket/cricket.html">CRICKET</a>
+                <li class="cricket"><a href = "./../cricket/cricket.html">CRICKET</a>
                     <ul class="cricket-dropdown">
                         <li><a href="#">Domestic Matches</a></li>
                         <li><a href="#">International Matches</a></li>
@@ -162,8 +212,26 @@
                         <li><a href="#">LIVE Score</a></li>
                     </ul>
                 </li>
-                <li><a href="./football/football.html">FOOTBALL</a></li>
-                <li><a href="./hockey/hockey.html">HOCKEY</a></li>
+                <li class = "football"><a href="./../football/football.html">FOOTBALL</a>
+                    <ul class= "football-dropdown">
+                        <li><a href = "#">Football</a></li>
+                        <li><a href = "#">Scores</a></li>
+                        <li><a href = "#">Fixtures</a></li>
+                        <li><a href = "#">Tables</a></li>
+                        <li><a href = "#">Top Scores</a></li>
+                        <li><a href = "#">Teams</a></li>
+                    </ul>
+                </li>
+                <li class = "hockey"><a href="./../hockey/hockey.html">HOCKEY</a>
+                    <ul class= "hockey-dropdown">
+                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#">Team</a></li>
+                        <li><a href = "#">Shedule</a></li>
+                        <li><a href = "#">Olympics</a></li>
+                        <li><a href = "#">News</a></li>
+                        <li><a href = "#">Contact Us</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">TABLE TENNIS</a></li>
                 <a href = "javascript:void(0);" class = "hide-btn" onclick="myFunction()"><i class = "fa fa-close"></i></a>
             </ul>

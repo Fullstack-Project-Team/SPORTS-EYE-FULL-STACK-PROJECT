@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football - SPORTSEYE</title>
+    <script>
+        $(function(){
+            $("#header").load("./../pages/header.html"); 
+      });
+        $(function(){
+            $("#footer").load("./../pages/footer.html")
+      });
+    </script>
     <style>
       * {
         padding: 0;
@@ -12,50 +20,11 @@
         box-sizing: border-box;
         font-family: arial;
       }
-      #container1{
+      #body{
         display: flex;
         flex-wrap: wrap;
       }
-      .header {
-        background-color: lightgray;
-        height: 70px;
-        width: 100%;
-        padding: 0px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .menu {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* line-height: 70px; */
-      }
-      .menu li a {
-        text-decoration: none;
-        font-size: 20px;
-        padding: 0px 20px;
-        color: black;
-        position: relative;
-      }
-      .menu li a:hover {
-        color: lightcoral;
-      }
-
-      .menu li a::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        position: absolute;
-        left: 0;
-        background-color: lightcoral;
-        transition: 0.3s;
-      }
-      .menu li a:hover::after {
-        width: 100%;
-      }
+      
       .content{
         display: flex;
         flex-direction: row;
@@ -163,18 +132,10 @@
       }
     </style>
   </head>
-  <body id="container1">
+  <body>
+    <div id = "header"></div>
     <div class="container">
-      <div class="header">
-        <ul class="menu">
-          <li><a href="#">Football</a></li>
-          <li><a href="#">Scores</a></li>
-          <li><a href="#">Fixtures</a></li>
-          <li><a href="#">Tables</a></li>
-          <li><a href="#">Top Scores</a></li>
-          <li><a href="./team.html">Teams</a></li>
-        </ul>
-      </div>
+      
       <div class="wcontent">
       <div class="content">
         <div class="left">
@@ -240,5 +201,6 @@
       </div>
       <div class="footer"></div>
     </div>
+    <div id = "footer"></div>
   </body>
 </html>
