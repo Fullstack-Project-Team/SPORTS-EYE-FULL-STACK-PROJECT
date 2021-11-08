@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./hockey.css" />
     <title>HOCKEY</title>
+    <script> 
+      $(function(){
+        $("#header").load("../pages/header.html"); 
+      });
+      $(function(){
+        $("#footer").load("../pages/footer.html")
+      });
+      </script> 
   </head>
   <body>
-    <div class="menu">
-      <ul>
-        <li><a href="#top">HOME</a></li>
-        <li><a href="#teams">TEAMS</a></li>
-        <li><a href="#schedule">SCHEDULE</a></li>
-        <li><a href="#olympics">OLYMPICS</a></li>
-        <li><a href="#news">NEWS</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-      </ul>
-    </div>
+    <div id = "header"></div>
     <div class="home">
       <img src="/images/hockey_home.jpg" alt="" />
     </div>
@@ -139,5 +138,6 @@
       <img src="../images/hockey_n1.png" alt="">
       <img src="../images/hockey_n2.png" alt="">
     </div>
+    <div id = "footer"></div>
   </body>
 </html>
