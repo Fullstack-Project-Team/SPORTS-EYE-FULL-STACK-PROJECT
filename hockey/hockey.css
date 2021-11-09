@@ -27,20 +27,29 @@
   }
   
 }
-
+@media only screen and (max-width: 400px){
+    .home img{
+        width: 90%;
+        height: 100px;
+    }
+}
 
 .home {
     text-align: center;
 }
 .home img {
     width: 80%;
-    height: 100vh;
+    height: 700px;
 }
 #teams {
     background-color: indianred;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 .teams-A {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 .teams-A img {
@@ -48,7 +57,8 @@
     margin-top: 15px;
 }
 .teams-B {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 .teams-B img {
@@ -66,6 +76,10 @@
 }
 #olympics {
     text-align: center;
+    width: 100%;
+}
+#olympics img{
+    width: 80%;
 }
 #contact h1{
     text-align: center;
