@@ -7,6 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
     <script> 
       $(function(){
@@ -19,32 +25,43 @@
 
 </head>
 <body>
+
   <div class="container">
-    <div id="header"></div>
+    <div id="header">
+    </div>
+    <div class="cover">
+      <p class="first">SportsEye</p><br>
+      <p class="second">One Destination for all Sports Lovers  </p>
+
+    </div>
+
+    <div class="note">
+      <p>Get notified with all the trends and changes in the Sporting Community</p>
+    </div>
     
     <div id="slideshow-container">
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 4</div>
           <img src="./images/1200px-Football_iu_1996.jpg">
-          <div class="text">Caption Text</div>
+          <div class="text">Football Scores and Updates</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 4</div>
-          <img src="./images/depositphotos_8307714-stock-photo-cricket-ball.jpg">
-          <div class="text">Caption Two</div>
+          <img src="./images/cricket_main.jpg">
+          <div class="text">Live Cricket Scores</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 4</div>
           <img src="./images/RHY4JDL4YBJ4NKAZTETG5EOG3M.jpg">
-          <div class="text">Caption Three</div>
+          <div class="text">Table Tennis</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">4 / 4</div>
-          <img src="./images/field-hockey-stick-ball-on-600w-1023485317.jpg">
-          <div class="text">Caption Four</div>
+          <img src="./images/hockey_main.jpg">
+          <div class="text">Hockey Stats</div>
         </div>
         </div>
         <br>
@@ -81,8 +98,8 @@
            
             
         </script>
-        <h1>Latest News</h1>
-        <div id = "Latest-news">
+        <!-- <h1>Latest News</h1> -->
+        <div id = "Latest-news" style="display: none;">
           
           <div class = "news">
               <img src = "./images/ipl-2020-final-mi-vs-dc.jpg"/>
@@ -90,29 +107,45 @@
               <a href = "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2021-qualifier-1-dc-vs-csk-playoffs-completely-different-our-tournament-starts-now-says-ricky-ponting/articleshow/86893245.cms ">Loss against RCB chance for players to REFLECT: Ricky Pointing</a>
 
           </div>
-          <div class="news">
+          <div class="news" >
             <img src= "images/Screenshot (87).png"/>
             <p>BBC</p><br/>
             <a href= "https://www.bbc.com/sport/football/58855831">Premier League: Saudi Arabia-backed Newcastle takeover complained about by other clubs</a>
 
           </div>
-          <div class = "news">
+          <div class = "news" >
               <img src= "images/86877598.jpg"/>
               <p>The Times Of India</p><br/>
               <a href= "http://timesofindia.indiatimes.com/articleshow/86877613.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Indian hockey scientific advisors' Robin Arkell, Wayne Lomba ..</a>
           </div>
-          <div class = "news">
+          <div class = "news" >
             <img src= "images/000_18N6HR_1200x768.webp"/>
             <p>The Times Of India</p><br/>
             <a href= "https://www.indiatoday.in/sports/other-sports/story/india-clinch-2-bronze-medals-in-men-s-doubles-asian-table-tennis-championship-1860697-2021-10-04">Asian Table Tennis Championship: India finish campaign with 2 men's doubles bronze medals</a>
         </div>
           </div>
-          <h1>MEET OUR TEAM</h1>
+          <h1 style="font-family: 'Noto Serif', serif; color:black; margin: top 50px;">MEET OUR TEAM</h1>
           <div id = "team">
-            <div class="circle"><img src = "images/chirag.jpeg"/></div>
-            <div class="circle"><img src = "images/krishna.jpg"/></div>
-            <div class="circle"><img src = "images/my1.jpg"/></div>
-            <div class="circle"><img src = "images/Manish.jpeg"/></div>
+            <div class="circle"><img src = "images/chirag.jpeg"/>
+            <p class="names1">Chirag Kaushik</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3">191500230</p>
+            </div>
+            <div class="circle"><img src = "images/krishna.jpg"/>
+            <p class="names1">Krishna Ballabh</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3"></p>
+            </div>
+            <div class="circle"><img src = "images/my1.jpg"/>
+            <p class="names1">Lalit Saini</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3"></p>
+            </div>
+            <div class="circle"><img src = "images/Manish.jpeg"/>
+            <p class="names1">Manish Dhakrey</p>
+            <p class="names2">B.Tech CSE</p>
+            <p class="names3"></p>
+            </div>
         </div>
         <div id = "footer"></div>
         
