@@ -14,9 +14,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20px 10px;
-    border-radius: 10px;
+    /* margin: 20px 10px; */
+    /* border-radius: 10px; */
     font-family: 'Noto Serif', serif;
+    /* margin-bottom: 50px; */
     
 }
 
@@ -31,19 +32,21 @@
      /* Ensures the content is not revealed until the animation */
   border-right: .15em solid coral;
    /* The typwriter cursor */
-  white-space: wrap; /* Keeps the content on a single line */
+  /* white-space: wrap; */
+   /* Keeps the content on a single line */
   margin: 5px 5px; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .01em; /* Adjust as needed */
   /* line-break: loose; */
   animation: 
-    typing 2.5s steps(40, end),
+    typing 4s 
+    steps(200, end),
     blink-caret .75s step-end infinite;
     
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 60% }
+    to { width: 90% }
   }
   
   /* The typewriter cursor effect */
@@ -61,11 +64,11 @@
 }
 
 .middle{
-    background-color: rgb(8, 5, 39);
-    color: white;
+    background-color: coral;
+    color: black;
     display: flex;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
     justify-content: center;
     font-size: 2rem;
     text-align: center;
@@ -73,17 +76,19 @@
     /* text-shadow: 5px 5px 5px grey; */
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin: 10px 10px;
-    padding: 10px 10px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    margin-bottom: 40px;
 
 
-    display: none;
+    /* display: none; */
 
 
 }
 
 .middle span{
     font-size: 2rem;
+    color: black;
     font-family: 'Noto Serif', serif;
     -webkit-text-stroke: .5px grey;
 }
@@ -213,6 +218,8 @@ font-size: 2rem;
 color:coral;
 padding: 10px 25px;
 display: inline-block;
+-webkit-text-stroke: .75px coral;
+    text-shadow: 0px 0px 10px grey;
 }
 
 .matches h1:hover{
@@ -222,10 +229,12 @@ display: inline-block;
 
 .matches div.trending{
     width: 100vw;
-    height: 35vh;
+    height: 40vh;
     margin: 10px 0px;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     grid-template-areas: "trending";
+    border-top: 2.5px solid coral;
+    border-bottom: 2.5px solid coral;
 }
 
 .matches div.live{
@@ -233,7 +242,7 @@ display: inline-block;
     height: 150vh;
     margin: 10px;
 
-    background-color: violet;
+    /* background-color: violet; */
     grid-template-areas: "live";
 
 }
@@ -241,16 +250,17 @@ display: inline-block;
 .matches div.score{
     width: 50vw;
     height: 50vh;
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-template-areas: "score";
     margin: 10px;
+    /* border: 2.5px solid coral; */
 
 }
 
 .matches div.international{
     width: 50vw;
     height: 50vh;
-    background-color:blueviolet;
+    /* background-color:blueviolet; */
     grid-template-areas: "international";
     margin: 10px;
 
@@ -259,7 +269,7 @@ display: inline-block;
 .matches div.domestic{
     width: 50vw;
     height: 50vh;
-    background-color:pink;
+    /* background-color:pink; */
     grid-template-areas: "domestic";
     margin: 10px;
 
@@ -269,4 +279,211 @@ display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.matches div.matches1 div.matches3 div.score{
+    border-bottom: 2.5px solid coral;
+}
+.matches div.matches1 div.matches3 div.international{
+    border-bottom: 2.5px solid coral;
+}
+.matches div.matches1 div.matches3 div.domestic{
+    border-bottom: 2.5px solid coral;
+}
+.matches div.matches1 div.matches3 div.score div.matchbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:stretch;
+    align-items:center;
+}
+.matches div.matches1 div.matches3 div.score div.matchbox div.box{
+    background-color: cadetblue;
+    height: 15vh;
+    width: 15vw;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+
+}
+.matches div.matches1 div.matches3 div.score div.matchbox div.box p{
+    font-weight: bold;
+
+    
+}
+.matches div.matches1 div.matches3 div.score div.matchbox div.box p.lower{
+    margin-top: 10px;
+    color: green;
+}
+
+.matches div.matches1 div.matches3 div.score div.matchbox div.box p.lives{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    animation: live 1s ease-in 0s infinite;
+}
+
+@keyframes live {
+    from{
+        text-decoration: none;
+    }
+}
+
+.matches div.trending div.container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.matches div.trending div.container div.tour{
+    /* background-color: blue; */
+    height: 22vh;
+    width: 25vw;
+    margin: 5px 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.matches div.trending div.container div#one{
+    background-image: url(../images/Trending_cricket.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.matches div.trending div.container div#two{
+    background-image: url(../images/womens_cricket.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.matches div.trending div.container div#three{
+    background-image: url(../images/India-vs-New-Zealand_759_cricket.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.matches div.trending div.container div#four{
+    background-image: url(../images/ashes_cricket.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.matches div.trending div.container div.tour p.head{
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    -webkit-text-stroke: .75px black;
+    text-shadow: 0px 0px 10px black;
+    font-weight: bold;
+}
+.matches div.trending div.container div.tour:hover{
+    border-left: 10px solid coral;
+    border-right: 10px solid coral;
+}
+.matches div.matches1 div.matches3 div.international div.int{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.matches div.matches1 div.matches3 div.international div.int div.box{
+    height: 15vh;
+    width: 15vw;
+    background-color: cadetblue;
+    margin: 15px 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* text-align: center; */
+
+}
+.matches div.matches1 div.matches3 div.international div.int div.box span{
+    color: black;
+    font-size: .75rem;
+}
+.matches div.matches1 div.matches3 div.international div.int div.box p.upper11{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.matches div.matches1 div.matches3 div.international div.int div.box p.upper21{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.matches div.matches1 div.matches3 div.international div.int div.box p.lower1{
+    font-weight: lighter;
+    font-size: .9rem;
+}
+
+
+
+.matches div.matches1 div.matches3 div.domestic div.dom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.matches div.matches1 div.matches3 div.domestic div.dom div.box{
+    height: 15vh;
+    width: 15vw;
+    background-color: cadetblue;
+    margin: 15px 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* text-align: center; */
+
+}
+.matches div.matches1 div.matches3 div.domestic div.dom div.box span{
+    color: black;
+    font-size: .75rem;
+}
+.matches div.matches1 div.matches3 div.domestic div.dom div.box p.upper11{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.matches div.matches1 div.matches3 div.domestic div.dom div.box p.upper21{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.matches div.matches1 div.matches3 div.domestic div.dom div.box p.lower1{
+    font-weight: lighter;
+    font-size: .9rem;
+}
+.matches div.matches1 div.matches2{
+    border-left: 2.5px solid coral;
+    border-bottom: 2.5px solid coral;
+}
+.matches div.matches1 div.matches2 div.live div.news ul{
+    list-style: none;
+}
+.matches div.matches1 div.matches2 div.live div.news ul li.item{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px 15px;
+}
+.matches div.matches1 div.matches2 div.live div.news ul li.item:hover{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.matches div.matches1 div.matches2 div.live div.news ul li.item img{
+    height: 25vh;
+    width: 20vw;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.matches div.matches1 div.matches2 div.live div.news ul li.item  a{
+    color: blue;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.matches div.matches1 div.matches2 div.live div.news ul li.item  a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    /* color: black; */
 }
