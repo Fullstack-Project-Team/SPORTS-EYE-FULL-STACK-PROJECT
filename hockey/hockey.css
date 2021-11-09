@@ -9,62 +9,9 @@
   padding: 15px;
   margin: 0px auto;
 }
-.header{
-  width: 100%;
-  height: 70px;
-  padding: 0px 20px;
-  background-color: lightgrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-p{
-  font-size: 40px; 
-  display: inline-block; 
-  font-weight:900; 
-  color:lightcoral
-}
-.header #menu{
-  list-style: none;
-}
-#menu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#menu li a{
-  text-decoration: none;
-  font-size: 20px;
-  padding: 0px 20px;
-  color: black;
-  position: relative;
 
-}
-#menu li a:hover{
-  color: lightcoral;
-}
-
-#menu li a::after{
-  content:  '';
-  display: block;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  left:0;
-  background-color: lightcoral    ;
-  transition: .3s;
-}
-#menu li a:hover::after{
-  width: 100%;
-}
-span{
-  font-size: 40px; 
-  font-weight: 900; 
-  color:black;
-}
-.header a i{
-  display: none;
-  font-size: 30px;
+.home{
+  padding-top: 15px;
 }
 @media only screen and (max-width: 1000px){
   p{
@@ -80,113 +27,14 @@ span{
   }
   
 }
-@media only screen and (max-width: 700px){
-  #menu{
-      background-color: grey;
-      top:0;
-      position: fixed;
-      right: -100%;
-      width: 100%;
-      height: 600px;
-      display: flex;
-      flex-direction: column;
-      transition: 1s;
 
-  }
-  #menu li a{
-      font-size: 25px;
-      font-weight: bold;
-      color: white;
-  }
-  #menu li{
-      display: block;
-      padding: 20px 0px;
-  }
-  .header a i{
-      display: block;;
-  }
-  .hide-btn{
-      display: block;
-      position: absolute;
-      right: 20px;
-      top: 10px;
-  }
-  .fa {
-      color: black;
-  }
-  .cricket ul{
-      display: none;
-  }
-}
-.cricket-dropdown{
-
-  list-style: none;
-  padding-top: 5px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  transition: all ease-in-out 0.4s;
-  margin-top: 20px;
-  
-}
-.cricket:hover .cricket-dropdown{
-
-  display: block;
-  
-}
-.cricket-dropdown li{
-  padding-bottom: 15px;
-}
-.football-dropdown{
-
-  list-style: none;
-  padding-top: 5px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  transition: all ease-in-out 0.4s;
-  margin-top: 20px;
-
-  }
-.football:hover .football-dropdown{
-      display: block;
-}
-.football-dropdown li{
-  padding-bottom: 15px;
-}
-.hockey-dropdown{
-
-  list-style: none;
-  padding-top: 5px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  transition: all ease-in-out 0.4s;
-  margin-top: 20px;
-
-  }
-.hockey:hover .hockey-dropdown{
-      display: block;
-}
-.hockey-dropdown li{
-  padding-bottom: 15px;
-}
 
 .home {
-    background-color: blue;
     text-align: center;
 }
 .home img {
-    width: 600px;
+    width: 80%;
+    height: 100vh;
 }
 #teams {
     background-color: indianred;
