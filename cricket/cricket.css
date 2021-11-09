@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body{
+    background-color: lightgrey;
 }
 
 .banner{
@@ -297,7 +301,7 @@ display: inline-block;
     align-items:center;
 }
 .matches div.matches1 div.matches3 div.score div.matchbox div.box{
-    background-color: cadetblue;
+    background-color: coral;
     height: 15vh;
     width: 15vw;
     text-align: center;
@@ -394,7 +398,7 @@ justify-content: space-between;
 .matches div.matches1 div.matches3 div.international div.int div.box{
     height: 15vh;
     width: 15vw;
-    background-color: cadetblue;
+    background-color: coral;
     margin: 15px 5px;
     padding: 10px 10px;
     border-radius: 10px;
@@ -429,7 +433,7 @@ justify-content: space-between;
 .matches div.matches1 div.matches3 div.domestic div.dom div.box{
     height: 15vh;
     width: 15vw;
-    background-color: cadetblue;
+    background-color: coral;
     margin: 15px 5px;
     padding: 10px 10px;
     border-radius: 10px;
