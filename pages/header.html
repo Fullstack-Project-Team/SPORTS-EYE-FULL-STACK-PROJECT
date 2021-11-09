@@ -22,7 +22,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        p{
+        .para{
             font-size: 40px; 
             display: inline-block; 
             font-weight:900; 
@@ -61,7 +61,7 @@
         #menu li a:hover::after{
             width: 100%;
         }
-        span{
+        .para span{
             font-size: 40px; 
             font-weight: 900; 
             color:black;
@@ -71,11 +71,11 @@
             font-size: 30px;
         }
         @media only screen and (max-width: 1000px){
-            p{
+            .para{
                 font-size: 25px;
 
             }
-            span{
+            .para span{
                 font-size: 25px;
             }
             #menu li a{
@@ -196,7 +196,7 @@
 </head>
 <body>
         <div class = "header">
-            <p>SP<i class = "fa fa-futbol-o" style="color:lightcoral;"></i>RTS <span>EYE</span></p>
+            <p class="para">SP<i class = "fa fa-futbol-o" style="color:lightcoral;"></i>RTS <span>EYE</span></p>
             
             <a href = "javascript:void(0);" onclick="myFunction()"><i class = "fa fa-bars" ></i></a>
             
@@ -213,12 +213,10 @@
                 </li>
                 <li class = "football"><a href="https://fullstack-project-team.github.io/SPORTS-EYE-FULL-STACK-PROJECT/football/football.html">FOOTBALL</a>
                     <ul class= "football-dropdown">
-                        <li><a href = "#">Football</a></li>
-                        <li><a href = "#">Scores</a></li>
-                        <li><a href = "#">Fixtures</a></li>
-                        <li><a href = "#">Tables</a></li>
-                        <li><a href = "#">Top Scores</a></li>
-                        <li><a href = "#">Teams</a></li>
+                        <li><a href = "../football/football.html">Football</a></li>
+                        <li><a href = "../football/football.html#content1">Scores&Fixtures</a></li>
+                        <li><a href = "../football/tables.html">Tables</a></li>
+                        <li><a href = "../football/team.html">Teams</a></li>
                     </ul>
                 </li>
                 <li class = "hockey"><a href="https://fullstack-project-team.github.io/SPORTS-EYE-FULL-STACK-PROJECT/hockey/hockey.html">HOCKEY</a>
