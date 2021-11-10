@@ -491,3 +491,47 @@ justify-content: space-between;
     font-weight: bold;
     /* color: black; */
 }
+@media screen and (max-width: 1000px){
+    .banner p{
+        font-size: 60px;
+    }
+    .middle span{
+        font-size: 20px;
+    }
+    .matches h1{
+        font-size: 30px
+    }
+    .matches div.trending div.container div.tour p.head{
+        font-size: 25px;
+    }
+    .matches div.matches1 div.matches3 div.score div.matchbox div.box p{
+        font-weight: normal;
+        font-size: x-small;
+    }
+    .matches div.matches1 div.matches3 div.score div.matchbox div.box{
+        height: 14vh;
+        width: 14vw;
+    }
+} 
+@media  screen and (max-width: 700px) {
+    .banner p{
+        font-size: 40px;
+    }
+    .middle span{
+        font-size: 15px;
+    }
+    .matches h1{
+        font-size: 20px;
+    }
+    .matches div.trending div.container div.tour p.head{
+        font-size: 20px;
+    }
+    .matches div.matches1 div.matches3 div.score div.matchbox div.box p{
+        font-weight: normal;
+        font-size: x-small;
+    }
+    .matches div.matches1 div.matches3 div.score div.matchbox div.box{
+        height: 13vh;
+        width: 13vw;
+    }
+}

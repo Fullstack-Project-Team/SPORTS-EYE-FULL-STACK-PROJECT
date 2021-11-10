@@ -20,7 +20,7 @@ body{
           background-repeat: no-repeat;
           background-size: cover;
           height: 85vh;
-          width: 100vw;
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -30,8 +30,10 @@ body{
         .cover p.first{
           font-size: 100px;
           text-shadow: 5px 5px 5px darkgrey;
+          text-align: center;
         }
         .cover p.second{
+          text-align: center;
           font-size: 50px;
           text-shadow: 5px 5px 5px darkgrey;
         }
@@ -95,15 +97,34 @@ body{
           width: 100%;
           height: 600px;
         }
-        @media only screen and (max-width: 1000px){
+        @media  screen and (max-width: 1000px){
+          .cover p.first{
+            font-size: 80px;
+          }
+          .text{
+            font-size:60px;
+          }
+          .cover p.second{
+            font-size: 60px;
+          }
           img{
             width: 100%;
             height: 450px;
           }
         }
-        @media only screen and (max-width: 700px){
+        @media screen and (max-width: 700px){
           #slideshow-container{
             position: static;
+          }
+          .cover p.first{
+            font-size: 50px;
+          }
+          .cover p.second{
+            font-size: 30px;
+          }
+          .text{
+            display: none;
+            font-size: 30px;
           }
         }
         /* Fading animation */
