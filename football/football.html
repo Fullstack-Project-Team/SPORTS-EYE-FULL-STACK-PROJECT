@@ -134,11 +134,14 @@
       }
       .box {
         justify-content: center;
+        display: flex;
+        flex-direction: column;
         height: 150px;
         width: 260px;
         border: 2px solid white;
         border-radius: 10px;
         background-color: azure;
+        margin-bottom: 20px;
       }
       .box img {
         height: 25px;
@@ -158,9 +161,11 @@
       }
       #content1 {
         margin-top: 20px;
+        
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
       }
       .post {
         margin-top: 20px;
@@ -170,14 +175,13 @@
       .viewTeam {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        justify-content: space-between;
       }
       .viewall {
         padding: 5px;
         text-decoration: none;
         font-weight: bold;
         font-size: 20px;
-        margin-left: 1000px;
       }
       .teamName {
         margin-left: 50px;
@@ -197,6 +201,11 @@
       }
       .teamImage ul img {
         width: 40%;
+      }
+      @media screen and (max-width: 100px){
+        .content p{
+          font-size:10px;
+        }
       }
     </style>
   </head>
@@ -282,8 +291,8 @@
           </div>
         </div>
       </div>
-      <div style="margin-left: 20px">
-        <h1 style="font-weight: bold; font-size: 25px">
+      <div style="margin-left: 20px;">
+        <h1 style="font-weight: bold; font-size: 25px;">
           Top Scores And Fixtures
         </h1>
       </div>
@@ -335,7 +344,7 @@
           <p>2022 World Cup Qualifying-UEFA</p>
         </div>
       </div>
-      <img src="fimage/score1.png" alt="" style="height: 600px; width: 800px" />
+      <img src="fimage/score1.png" alt="" style="height: 50vh; width: 100%" />
       <div class="viewTeam" style="margin-top: 20px">
         <div style="margin-left: 20px">
           <h1 style="font-weight: bold; font-size: 25px">Teams</h1>
